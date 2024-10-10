@@ -41,6 +41,7 @@ public class LaunchBrowser {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(4000));
         System.out.println(driver.getTitle());
+        System.out.println(driver.getTitle());
 
     }
 
