@@ -33,6 +33,17 @@ public class LaunchBrowser {
 
     }
 
+    @Test
+    public void launchEdgeTest(){
+
+        driver=new FirefoxDriver();
+        driver.get("https://www.amazon.com/");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(4000));
+        System.out.println(driver.getTitle());
+
+    }
+
     @AfterMethod
     public void tearDown(){
         driver.quit();
